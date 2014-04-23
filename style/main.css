@@ -1,11 +1,17 @@
 @import url(fonts/clear-sans.css);
+
+html {
+  background: url('../media/images/backgrounds/rapid_shuffle.jpg');
+  background-size:contain;
+}
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  color: #fff;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  text-shadow: 2px 2px #000;
+}
 
 body {
   margin: 80px 0; }
@@ -53,7 +59,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #000;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -72,7 +78,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #fff; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -101,17 +107,18 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #fff;
   font-weight: bold;
   text-decoration: underline;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 strong.important {
   text-transform: uppercase; }
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
+  border-bottom: 1px solid #999999;
   margin-top: 20px;
   margin-bottom: 30px; }
 
@@ -149,7 +156,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #323232;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -311,72 +318,89 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 55px; }
+    font-size: 0px; }
   .tile.tile-2 .tile-inner {
     background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    background: url('../media/images/tile_sets/cards_deck/A.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-4 .tile-inner {
     background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    background: url('../media/images/tile_sets/cards_deck/2.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179; }
+    background: #f2b179;
+    background: url('../media/images/tile_sets/cards_deck/3.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #f59563; }
+    background: #f59563;
+    background: url('../media/images/tile_sets/cards_deck/4.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f; }
+    background: #f67c5f;
+    background: url('../media/images/tile_sets/cards_deck/5.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: #f65e3b; }
+    background: #f65e3b;
+    background: url('../media/images/tile_sets/cards_deck/6.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
     background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-128 .tile-inner {
-        font-size: 25px; } }
+    background: url('../media/images/tile_sets/cards_deck/7.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
     background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-256 .tile-inner {
-        font-size: 25px; } }
+    background: url('../media/images/tile_sets/cards_deck/8.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
     background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-512 .tile-inner {
-        font-size: 25px; } }
+    background: url('../media/images/tile_sets/cards_deck/9.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
     background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 35px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-1024 .tile-inner {
-        font-size: 15px; } }
+    background: url('../media/images/tile_sets/cards_deck/10.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
     background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 35px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-2048 .tile-inner {
-        font-size: 15px; } }
+    background: url('../media/images/tile_sets/cards_deck/J.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
     background: #3c3a32;
-    font-size: 30px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-super .tile-inner {
-        font-size: 10px; } }
+    background: url('../media/images/tile_sets/cards_deck/Q.png') no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
 
 @-webkit-keyframes appear {
   0% {
@@ -488,11 +512,11 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #000;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #fff;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -700,7 +724,7 @@ hr {
     transform: translate(202px, 202px); }
 
   .tile .tile-inner {
-    font-size: 35px; }
+    font-size: 0px; }
 
   .game-message p {
     font-size: 30px !important;
